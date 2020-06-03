@@ -25,6 +25,7 @@
     "gatsby-source-filesystem": "^2.3.8",
     "gatsby-transformer-remark": "^2.8.13",
     "gatsby-transformer-sharp": "^2.5.3",
+    "gh-pages": "^3.0.0",
     "prismjs": "^1.20.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -55,6 +56,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public -b master -r \"https://:$TEST_SECRET@github.com/mavrickp/my-blog.git\""
   }
 }
